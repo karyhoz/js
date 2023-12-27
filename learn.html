@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="learn.css" />
+    <title>learn</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">User Login</h1>
+
+      <form
+        action="home.html"
+        class="login_form"
+        method="post"
+        name="form"
+        onsubmit="return
+      validated()"
+      >
+        <div class="font">Email or Phone</div>
+        <input type="text" name="email" placeholder="Email or Phone*" />
+        <div id="email_err">Please fill up email or Phone</div>
+
+        <div class="font2">Password</div>
+        <input type="password" name="password" placeholder="Password*" />
+        <div id="pass_err">Please fill up Password</div>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="learn.js"></script>
+  </body>
+</html>
